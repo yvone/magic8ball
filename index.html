@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Magic 8 ball</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Azeret+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1 class="title">
+			Ask me something
+		</h1>
+		<h2 class="subtitle">if you dare</h2>
+	</header>
+
+	<main>
+		<section class="magicBall">
+			<div class="magicBall_display">
+				<p class="luckyText luckyText___animated" id="luck"></p>
+			</div>
+		</section>
+
+		<section class="userLuck">
+			<!-- <form id="ownluck">
+				<label for="ownLuck">Decide my own luck:</label>
+				<input type="text" name="ownLuck">
+			</form> -->
+			<button type="button" class="userLuck_btn" id="question">
+			    What's my luck?
+		    </button>
+		</section>
+
+		<section class="log">
+			<h3>Lucky log:</h3>
+			<ol id="logList">
+				<li>It's just my luck</li>
+			</ol>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="luck.js">
+	</script>
+</body>
+</html>

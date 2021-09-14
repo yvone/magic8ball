@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1696ff;
+	color: #f9f7f2;
+	font-size: 16px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 30vh;
+	padding: 1rem;
+}
+
+.title, .subtitle {
+	font-family: 'Abril Fatface', cursive;
+}
+
+.subtitle {
+	color: #a4d4fc;
+}
+
+.magicBall {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding: 1rem 5rem;
+	overflow-y: visible;
+}
+
+.magicBall_display {
+	width: 300px;
+	height: 300px;
+	border: 1px solid white;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: radial-gradient(
+		circle,
+		rgba(255,255,255,1) 0%,
+		rgba(11,11,11,1) 60%,
+		rgba(0,0,0,1) 100%
+	);
+}
+
+#luck {
+	width: 150px;
+	max-height: 150px;
+	text-align: center; 
+	color: #121147;
+	font-weight: bold;
+	font-size: 1.5rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.luckyText {
+	opacity: 0;
+    transition: all 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.luckyText___animated {
+    visibility: visible;
+    opacity: 1;
+    animation: shake 3s linear infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+   30% { transform: rotate(10deg); }
+   60% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.userLuck {
+	font-family: 'Azeret Mono', monospace;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+.userLuck_btn {
+	width: 50%;
+	height: 64px;
+	color: black;
+	background-color: #ffd651;
+	border: 1px solid #ffd651;
+	border-radius: 10px;
+	padding: 0.5rem;
+	margin: 1rem;
+	font-size: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.userLuck_btn:hover {
+	background-color: #ffc816;
+	border: 1px solid #ffc816;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+}
+
+.log {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100vw;
+	height: 20vh;
+	margin: 2rem auto 0;
+	padding: 1rem 5rem;
+	background-color: #a4d4fc;
+	color: black;
+	overflow-y: scroll;
+}
